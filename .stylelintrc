@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-standard",
+  
+  "rules": {
+    "at-rule-empty-line-before": "always",
+    "block-opening-brace-space-before": "always",
+    "declaration-no-important": true,
+    "import-notation": "string",
+    "max-empty-lines": 1,
+    "max-line-length": 92,
+    "no-empty-first-line": true,
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true,
+    "no-missing-end-of-source-newline": true,
+    "selector-class-pattern": null,
+    "unit-disallowed-list": ["px"]
+  }
+}

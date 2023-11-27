@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--default-background-color);
+  color: var(--default-color);
+  font-family: Poppins, sans-serif;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  width: min(var(--container-width), calc(100% - 2 * var(--container-padding)));
+  margin-inline: auto;
+}
+
+#root {
+  display: grid;
+  place-content: center;
+}

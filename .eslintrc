@@ -1,0 +1,131 @@
+{
+	"root": true,
+
+	"parser": "@typescript-eslint/parser",
+
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+
+  "plugins": [
+		"@typescript-eslint"
+  ],
+
+  "rules": {
+		"array-callback-return": "error",
+    "arrow-body-style": ["error", "as-needed"],
+		"arrow-parens": ["error", "always"],
+		"arrow-spacing": "error",
+		"block-scoped-var": "error",
+		"block-spacing": "error",
+		"brace-style": ["error", "stroustrup", { "allowSingleLine": false }],
+		"comma-dangle": ["error", "always-multiline"],
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"complexity": ["error", 8],
+		"consistent-return": "error",
+		"curly": ["error", "all"],
+		"default-param-last": ["error"],
+		"dot-notation": "error",
+		"eol-last": ["error", "always"],
+		"eqeqeq": "error",
+		"func-name-matching": "error",
+		"func-names": ["error", "as-needed"],
+		"func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+		"id-length": ["error", { "min": 1, "max": 36 }],
+		"indent": ["error", "tab"],
+		"keyword-spacing": "error",
+		"logical-assignment-operators": ["error", "always"],
+		// "max-classes-per-file": ["error", { "ignoreExpressions": true }],
+		"max-depth": ["error", 4],
+		"max-params": ["error", 4],
+		"new-cap": "error",
+		"no-await-in-loop": "error",
+		"no-constructor-return": "error",
+		"no-div-regex": "error",
+		"no-duplicate-imports": "error",
+		"no-else-return": ["error", { "allowElseIf": false }],
+		"no-extend-native": "error",
+		"no-extra-bind": "error",
+		"no-extra-label": "error",
+		"no-implicit-coercion": "error",
+		"no-invalid-this": "error",
+		"no-label-var": "error",
+		"no-labels": "error",
+		"no-lone-blocks": "error",
+		"no-lonely-if": "error",
+		"no-loop-func": "error",
+		"no-multi-assign": "error",
+		"no-multiple-empty-lines": ["error", {
+			"max": 1,
+			"maxBOF": 0,
+			"maxEOF": 0
+		}],
+		"no-new": "error",
+		"no-new-func": "error",
+		"no-new-wrappers": "error",
+		"no-object-constructor": "error",
+		"no-param-reassign": "error",
+		"no-return-assign": "error",
+		"no-self-compare": "error",
+		// "no-shadow": ["error", { "hoist": "all" }],
+		"no-template-curly-in-string": "error",
+		"no-trailing-spaces": "error",
+		"no-undef-init": "error",
+		"no-undefined": "error",
+		"no-unneeded-ternary": "error",
+		"no-unused-expressions": "error",
+		"no-use-before-define": "error",
+		"no-useless-computed-key": "error",
+		"no-useless-concat": "error",
+		// "no-useless-constructor": "error",
+		"no-useless-rename": ["error", { "ignoreDestructuring": true }],
+		"no-useless-return": "error",
+		"no-var": "error",
+		"no-void": "error",
+		"object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }],
+		"object-curly-newline": ["error", {
+			"ObjectExpression": {
+				"multiline": true,
+				"consistent": true,
+				"minProperties": 3
+			},
+			"ObjectPattern": {
+				"multiline": true,
+				"consistent": true,
+				"minProperties": 5
+			},
+			"ImportDeclaration": { "multiline": true, "consistent": true },
+			"ExportDeclaration": {
+				"multiline": true,
+				"consistent": true,
+				"minProperties": 3
+			}
+		}],
+		"object-curly-spacing": ["error", "always"],
+		"object-shorthand": ["error", "always"],
+		"operator-assignment": ["error", "always"],
+		"padding-line-between-statements": ["error", {
+			"blankLine": "always",
+			"prev": "*",
+			"next": "return"
+		}],
+		"prefer-arrow-callback": "error",
+		"prefer-const": "error",
+		"prefer-destructuring": "error",
+		"prefer-exponentiation-operator": "error",
+		"prefer-object-has-own": "error",
+		"prefer-object-spread": "error",
+		"prefer-template": "error",
+		"require-await": "error",
+		"semi": "error",
+		"semi-spacing": "error",
+		"space-before-blocks": "error",
+		"space-before-function-paren": ["error", { "named": "never" }],
+		"space-infix-ops": "error",
+		"quotes": ["error", "single"],
+		"quote-props": ["error", "consistent-as-needed"],
+		"@typescript-eslint/indent": ["error", "tab"],
+		"@typescript-eslint/no-inferrable-types": "error"
+  }
+}
